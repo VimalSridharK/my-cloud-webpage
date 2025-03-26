@@ -19,3 +19,22 @@ nav a {
 nav a:hover {
     color: darkblue;
 }
+/* Splash Screen Style */
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+/* Main Content Style */
+#main-content {
+    text-align: center;
+    padding: 20px;
+}
+
