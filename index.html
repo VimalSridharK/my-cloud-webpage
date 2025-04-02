@@ -3,18 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Weekly Diet Plans</title>
+    <title>Weekly Diet Plans with BMI Calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        setTimeout(function() {
-            window.location.href = 'index.html';
-        }, 3000); // Redirects after 3 seconds
-    </script>
 </head>
-<body class="welcome-page">
-    <div class="welcome-container">
-        <h1>Welcome to Weekly Diet Plans</h1>
-        <p>Your personalized guide to healthy eating.</p>
-    </div>
+<body>
+    <header>
+        <h1>Weekly Diet Plans by Country</h1>
+        <p>Select a country to view its traditional weekly diet plan.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#india">India</a></li>
+            <li><a href="#japan">Japan</a></li>
+            <li><a href="#italy">Italy</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- BMI Calculator Section -->
+        <section id="bmi-calculator">
+            <h2>BMI Calculator</h2>
+            <form id="bmi-form">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+                <button type="submit">Calculate BMI</button>
+            </form>
+            <div id="bmi-result"></div>
+        </section>
+
+        <!-- India Diet Plan Section -->
+        <section id="india" class="country-section">
+            <h2>India</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Dinner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>
+                            Idli with Sambar
+                            <div class="nutrition-info">
+                                <p>Carbs: 50g</p>
+                                <p>Protein: 6g</p>
+                                <p>Fat: 2g</p>
+                            </div>
+                        </td>
+                        <td>
+                            Vegetable Biryani with Raita
+                            <div class="nutrition-info">
+                                <p>Carbs: 65g</p>
+                                <p>Protein: 8g</p>
+                                <p>Fat: 10g</p>
+                            </div>
+                        </td>
+                        <td>
+                            Chapati with Paneer Curry
+                            <div class="nutrition-info">
+                                <p>Carbs: 55g</p>
+                                <p>Protein: 12g</p>
+                                <p>Fat: 15g</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Add rows for other days with similar structure -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Japan Diet Plan Section -->
+        <section id="japan" class="country-section">
+            <h2>Japan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Dinner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>
+                            Miso Soup with Rice
+                            <div class="nutrition-info">
+                                <p>Carbs: 40g</p>
+                                <p>Protein: 5g</p>
+                                <p>Fat: 3g</p>
+                            </div>
+                        </td>
+                        <td>
+                            Sushi Rolls
+                            <div class="nutrition-info">
+                                <p>Carbs: 50g</p>
+                                <p>Protein: 10g</p>
+                                <p>Fat: 5g</p>
+                            </div>
+                        </td>
+                        <td>
+                            Grilled Fish with Vegetables
+                            <div class="nutrition-info">
+                                <p>Carbs: 20g</p>
+                                <p>Protein: 25g</p>
+                                <p>Fat: 10g</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Add rows for other days with similar structure -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Italy Diet Plan Section -->
+        <section id="italy" class="country-section">
+            <h2>Italy</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Dinner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>
+                            Croissant with Espresso
+                            <div class="nutrition-info">
+                                <p>Carbs: 30g</p>
+                                <p>Protein: 4g</p>
+                                <p>Fat: 12g</p>
+                            </div>
+                        </td>
+                        <td>
+                            Margherita Pizza
+                            <div class="nutrition-info">
+                                <p>Carbs: 60g</p>
+                                <p>Protein: 15g</p>
+                                <p>Fat: 20g</p>
+                            </div>
+                        </td>
+                        <td>
+                            Pasta with Pesto Sauce
+                            <div class="nutrition-info">
+                                <p>Carbs: 70g</p>
+                                <p>Protein: 12g</p>
+                                <p>Fat: 18g</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Add rows for other days with similar structure -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Weekly Diet Plans. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
