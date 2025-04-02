@@ -1,11 +1,12 @@
-// JavaScript to handle the splash screen
-document.addEventListener("DOMContentLoaded", function () {
-    const splashScreen = document.getElementById("splash-screen");
-    const mainContent = document.getElementById("main-content");
-
-    // Hide the splash screen and show main content after 3 seconds
-    setTimeout(() => {
-        splashScreen.style.display = "none";
-        mainContent.style.display = "block";
-    }, 3000);
-});
+document.getElementById('bmi-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const weight = parseFloat(document.getElementById('weight').value);
+    const height = parseFloat(document.getElementById('height').value) / 100; // Convert cm to meters
+    if (weight > 0 && height > 0) {
+        const bmi = (weight / (height * height)).toFixed(2);
+        let category = '';
+        if (bmi < 18.5) {
+            category = 'Underweight';
+        } else if (bmi >= 18.5 && bmi < 24
+::contentReference[oaicite:19]{index=19}
+ 
